@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto';
+    background-image: url("/images/backcover.svg");
+    background-repeat: no-repeat;  
+    background-position: right;
+}
+
+/* ---------NAVBAR------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    line-height: 70px;
+}
+.nav-item{
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+h1{
+    margin-top: -90px;
+    font-size: 80px;
+}
+h4 {
+    width: 350px;
+    margin-top: 65px;
+    line-height: 30px;
+}
+div.left-section{
+    width: 30%;
+    position: absolute;
+    margin-top: 179px;
+    margin-left: 46px;
+}
+div.imgs-div{
+    margin-left: 503px;
+    margin-top: -1px;
+}
+img:nth-child(3){
+    width: 800px;
+}
+.learn-more-btn{
+    font-size: 20px;
+    margin-top: 96px;
+    padding: 16px 24px;
+    border-radius: 62px;
+    border: none;
+    background-color: blue;
+    color: #ffffff;
+}
+img.vector-img{
+    margin-top: 37px;
+    margin-bottom: 152px;
+}
+.signin-btn{
+    margin-left: 1238px;
+    margin-top: 25px;
+    position: absolute;
+    padding: 3px 17px;
+    border-radius: 32px;
+    border: none;
+    background-color: blue;
+    color: #ffffff;
+}
+.nav-items{
+    margin-left: 463px;
+    margin-right: 543px;
+    margin-top: 7px;
+    position: absolute;
+}
+nav img{
+    margin-left: 57px;
+    margin-top: 19px;
+}
