@@ -17,6 +17,10 @@ body {
 ---------NAVBAR SECTION----------
 -------------------------------- */
 
+label .fa-solid {
+     display: none;
+}
+
 nav {
     height: 80px;
     width: 100%;
@@ -168,6 +172,11 @@ nav .signin-btn button {
 -------------------------------- */
 
 @media only screen and (max-width: 750px){
+    
+    label .fa-solid {
+        margin-top: 25px;
+        display: block;
+    }
 
     .logo {
         margin-left: -30px;
