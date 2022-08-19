@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-size: 70%;
+    background-image: url("/images/backcover.svg");
+    background-repeat: no-repeat;  
+    background-position: 518px 75%;
+    /* overflow-y: hidden; */
+}
+
+/* --------------------------------
+---------NAVBAR SECTION----------
+-------------------------------- */
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    margin-top: 20px;
+    padding: 0 70px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav .nav-items {
+    float: right;
+    margin-right: 20px;
+}
+
+.signin-btn {
+    float: right;
+}
+
+.nav-items h5, .signin-btn  {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.signin-btn button {
+    font-size: 2vmin;
+    font-weight: 500;
+}
+
+.nav-items .nav-item {
+    margin-right: 60px;
+    color: rgb(46, 46, 70);
+    font-size: 2vmin;
+    font: 900;
+    cursor: pointer;
+}
+
+nav .nav-items {
+    margin-right: 370px;
+}
+
+nav .signin-btn {
+    position: absolute;
+    margin-left: 200px;
+}
+
+nav .signin-btn button {
+    padding: 10px 20px;
+    background: linear-gradient(pink,blue);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* --------------------------------
+---------INTRO SECTION----------
+-------------------------------- */
+
+.intro-section {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.left-section h1 {
+    font-size: 10vmin;
+    color: rgb(72, 72, 160);
+    margin-top: 9rem;
+}
+
+.left-section h4 {
+    font-weight: 300;
+    color: rgb(73, 73, 136);
+    width: 350px;
+    padding-top: 3.5rem;  
+}
+
+.learn-more-btn button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(pink,blue);
+    border: none;
+    color: white;
+    font-size: 2.5vmin;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.learn-more-btn {
+    padding-top: 3.5rem;
+}
+
+.vector-img {
+    position: absolute;
+    top: 600px;
+    left: 600px;
+}
+
+.vector-dot {
+    position: absolute;
+    top: 610px;
+    left: 655px;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    margin-top: 2px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+/* --------------------------------
+---------ANIMATION----------
+-------------------------------- */
+
+.nav-items .nav-item:hover {
+    color: rgb(180, 89, 89);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+
+.left-section .learn-more-btn button:hover{
+    background-color: royalblue;
+}
+
+/* --------------------------------
+---------MEDIA-QUERY-SECTION----------
+-------------------------------- */
+
+@media only screen and (max-width: 750px){
+
+    .logo {
+        margin-left: -30px;
+    }
+    
+    .intro-img {
+        display: none;
+    }
+
+    .imgs-div {
+        display: none;
+    }
+    
+    .left-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.nav-items {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    #check:checked ~ .nav-items {
+        left: 0;
+    }
+
+    div.nav-items h5 {
+        margin-top: 20px;
+        display: block;
+        font-size: 15px !important;
+        color: white !important;
+    }
+
+    .signin-btn {
+        margin-left: -64px !important;
+        
+    }
+
+
+}
